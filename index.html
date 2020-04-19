@@ -1,42 +1,128 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-<title>Pizzeria Dukat - najlepsza pizza w okolicy!</title>
-<meta name="description" content="Serdecznie zapraszamy do odwiedzenia nas w naszej pizzerii">  
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500;1,700&display=swap&subset=latin-ext" rel="stylesheet">
-<link href="/css/global.css" rel="stylesheet" >
-<link href="/css/main-banner.css" rel="stylesheet" >
-<link href="/css/container.css" rel="stylesheet" >
-<link href="/css/about-us.css" rel="stylesheet" >
-    </head>
-    <body>
-       <section class="main-banner">
-           <a href="#about-us" class="main-banner_button">
-               Poznaj nas lepiej
 
-           </a>
+<head>
+    <title>Pizzeria Dukat - najlepsza pizza w okolicy!</title>
+    <meta name="description" content="Serdecznie zapraszamy do odwiedzenia nas w naszej pizzerii">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500;1,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/main-banner.css" rel="stylesheet">
+    <link href="/css/container.css" rel="stylesheet">
+    <link href="/css/about-us.css" rel="stylesheet">
+    <link href="/css/main-navigation.css" rel="stylesheet">
+</head>
 
-       </section> 
+<body>
 
-       <div class="container"> 
-           <section class="about-us">
-               <div class="about-us_text">
+    <nav class="main-navigation">
+        <div class="main-navigation_inner">
+            <div class="main-navigation_logo">
+                <a href="#" class="main-navigation_logo-link">
+
+                    <img src="/images/logo.svg" alt="Logo" class="main-navigation_logo-image">
+                    Pizzeria Dukat
+                </a>
+
+
+            </div>
+
+            <ul class="main-navigation_menu js-main-navigation_menu">
+                <li class="main-navigation_menu-item">
+                    <a href="#" class="main-navigation_link">
+                        Home
+                    </a>
+
+
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#about-us" class="main-navigation_link">
+                        O nas
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#menu" class="main-navigation_link">
+                        Menu
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#news" class="main-navigation_link">
+                        Aktualności
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#gallery" class="main-navigation_link">
+                        Galeria
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#contact" class="main-navigation_link">
+                        Kontakt
+                    </a>
+                </li>
+                <li class="main-navigation_menu-item">
+                    <a href="#map" class="main-navigation_link">
+                        Jak dojechać
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <button class="main-navigation_mobile-button js-main-navigation_mobile-button">
+                <img src="/images/navigation.svg" alt="Otwórz / zamknij nawigację"
+                    class="main-navigation_mobile-button-image">
+
+
+
+            </button>
+
+
+
+        </div>
+
+
+    </nav>
+
+    <script src="/js/main-navigation.js"></script>
+
+    <section class="main-banner">
+        <a href="#about-us" class="main-banner_button">
+            Poznaj nas lepiej
+
+        </a>
+
+    </section>
+
+    <div class="container" id="about-us">
+        <section class="about-us">
+            <div class="about-us_text">
                 <h3 class="about-us_header"> Najwyższej jakości jedzenie w Pizzerii Dukat </h3>
-                <p class="about-us_paragraph">Od kilku lat tworzymy z pasją i zaangażowaniem smak idealnej pizzy – przygotowywanej ze świeżych oraz wysokiej jakości składników i pieczonej na wyśmienitym cieście tworzonym w oparciu o specjalną recepturę. </p>
-                <p class="about-us_paragraph">W bogatej ofercie naszej Pizzerii, klienci znajdą nie tylko pizzę o różnych smakach, ale także szeroką ofertę posiłków typu fast food, takich jak kebaby, hamburgery czy food boxy, a także zestawy w wersji obiadowej oraz dwa rodzaje sałatek. Zapraszamy również na pyszną kawę z ekspresu! </p>
-                <p class="about-us_paragraph">Chcemy serdecznie podziękować naszym wieloletnim jak i nowym klientom, za Wasze zaufanie i wybór naszej Pizzerii  oraz wyrażamy nadzieję, że Pizzeria Dukat w Bogorii zawsze będzie dla Państwa miejscem gdzie można smacznie zjeść.</p>
+                <p class="about-us_paragraph">Od kilku lat tworzymy z pasją i zaangażowaniem smak idealnej pizzy –
+                    przygotowywanej ze świeżych oraz wysokiej jakości składników i pieczonej na wyśmienitym cieście
+                    tworzonym w oparciu o specjalną recepturę. </p>
+                <p class="about-us_paragraph">W bogatej ofercie naszej Pizzerii, klienci znajdą nie tylko pizzę o
+                    różnych smakach, ale także szeroką ofertę posiłków typu fast food, takich jak kebaby, hamburgery czy
+                    food boxy, a także zestawy w wersji obiadowej oraz dwa rodzaje sałatek. Zapraszamy również na pyszną
+                    kawę z ekspresu! </p>
+                <p class="about-us_paragraph">Chcemy serdecznie podziękować naszym wieloletnim jak i nowym klientom, za
+                    Wasze zaufanie i wybór naszej Pizzerii oraz wyrażamy nadzieję, że Pizzeria Dukat w Bogorii zawsze
+                    będzie dla Państwa miejscem gdzie można smacznie zjeść.</p>
 
-               </div>
+            </div>
 
-               <img class="about-us_image" src="/images/about-us.jpg" alt="">
+            <img class="about-us_image" src="/images/about-us.jpg" alt="">
 
-            
-           </section>
 
-       </div>
-    </body>
+        </section>
+
+    </div>
+</body>
+
 </html>
