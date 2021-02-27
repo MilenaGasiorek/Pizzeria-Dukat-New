@@ -1,129 +1,696 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-    <title>Pizzeria Dukat - najlepsza pizza w okolicy!</title>
-    <meta name="description" content="Serdecznie zapraszamy do odwiedzenia nas w naszej pizzerii">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500;1,700&display=swap&subset=latin-ext"
-        rel="stylesheet">
-    <link href="/css/global.css" rel="stylesheet">
-    <link href="/css/main-banner.css" rel="stylesheet">
-    <link href="/css/container.css" rel="stylesheet">
-    <link href="/css/about-us.css" rel="stylesheet">
-    <link href="/css/main-navigation.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-    <nav class="main-navigation">
-        <div class="main-navigation_inner">
-            <div class="main-navigation_logo">
-                <a href="#" class="main-navigation_logo-link">
-
-                    <img src="/images/logo.svg" alt="Logo" class="main-navigation_logo-image">
-                    Pizzeria Dukat
-                </a>
-
-
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167907316-1"></script>
+        <script src="/js/googleanalitics.js"></script>
+        <title>Pizzeria Dukat w Bogorii - najlepsza pizza w okolicy!</title>
+        <meta name="description" content="Serdecznie zapraszamy do odwiedzenia nas w naszej pizzerii w Bogorii przy ul. Rynek 19">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Pizzeria Dukat w Bogorii">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+            crossorigin="anonymous"
+        >
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500;1,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="/css/global.css" rel="stylesheet">
+        <link href="/css/main-banner.css" rel="stylesheet">
+        <link href="/css/container.css" rel="stylesheet">
+        <link href="/css/about-us.css" rel="stylesheet">
+        <link href="/css/main-navigation.css" rel="stylesheet">
+        <link href="/css/bookmark.css" rel="stylesheet">
+        <link href="/css/menu.css" rel="stylesheet">
+        <link href="/css/news.css" rel="stylesheet">
+        <link href="/css/gallery.css" rel="stylesheet">
+        <link href="/css/contact-form.css" rel="stylesheet">
+        <link href="/css/route.css" rel="stylesheet">
+        <link href="/css/footer.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="main-navigation">
+            <div class="main-navigation_inner">
+                <div class="main-navigation_logo">
+                    <a href="#" class="main-navigation_logo-link">
+                        <img src="/images/logo.svg" alt="Logo" class="main-navigation_logo-image">
+                        Pizzeria Dukat
+                    </a>
+                </div>
+                <ul class="main-navigation_menu js-main-navigation_menu">
+                    <li class="main-navigation_menu-item">
+                        <a href="#" class="main-navigation_link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="main-navigation_menu-item">
+                        <a href="#about-us" class="main-navigation_link">
+                            O nas
+                        </a>
+                    </li>
+                    <li class="main-navigation_menu-item">
+                        <a href="#menu" class="main-navigation_link">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="main-navigation_menu-item">
+                        <a href="#news" class="main-navigation_link">
+                            Aktualności
+                        </a>
+                    </li>
+                    <li class="main-navigation_menu-item">
+                        <a href="#gallery" class="main-navigation_link">
+                            Galeria
+                        </a>
+                    </li>
+                    <li class="main-navigation_menu-item">
+                        <a href="#contact" class="main-navigation_link">
+                            Kontakt
+                        </a>
+                    </li>
+                    <li class="main-navigation_menu-item">
+                        <a href="#route" class="main-navigation_link">
+                            Jak dojechać
+                        </a>
+                    </li>
+                </ul>
+                <button class="main-navigation_mobile-button js-main-navigation_mobile-button">
+                    <img src="/images/navigation.svg" alt="Otwórz / zamknij nawigację" class="main-navigation_mobile-button-image">
+                </button>
             </div>
-
-            <ul class="main-navigation_menu js-main-navigation_menu">
-                <li class="main-navigation_menu-item">
-                    <a href="#" class="main-navigation_link">
-                        Home
-                    </a>
-
-
-                </li>
-                <li class="main-navigation_menu-item">
-                    <a href="#about-us" class="main-navigation_link">
-                        O nas
-                    </a>
-                </li>
-                <li class="main-navigation_menu-item">
-                    <a href="#menu" class="main-navigation_link">
-                        Menu
-                    </a>
-                </li>
-                <li class="main-navigation_menu-item">
-                    <a href="#news" class="main-navigation_link">
-                        Aktualności
-                    </a>
-                </li>
-                <li class="main-navigation_menu-item">
-                    <a href="#gallery" class="main-navigation_link">
-                        Galeria
-                    </a>
-                </li>
-                <li class="main-navigation_menu-item">
-                    <a href="#contact" class="main-navigation_link">
-                        Kontakt
-                    </a>
-                </li>
-                <li class="main-navigation_menu-item">
-                    <a href="#map" class="main-navigation_link">
-                        Jak dojechać
-                    </a>
-                </li>
-
-
-            </ul>
-
-            <button class="main-navigation_mobile-button js-main-navigation_mobile-button">
-
-                <img src="/images/navigation.svg" alt="Otwórz / zamknij nawigację"
-                    class="main-navigation_mobile-button-image">
-            </button>
-
-
-
-        </div>
-
-
-    </nav>
-
-    <script src="/js/main-navigation.js"></script>
-
-
-
-    <section class="main-banner">
-        <a href="#about-us" class="main-banner_button">
-            Poznaj nas lepiej
-
-        </a>
-
-    </section>
-
-    <div class="container" id="about-us">
-        <section class="about-us">
-            <div class="about-us_text">
-                <h3 class="about-us_header"> Najwyższej jakości jedzenie w Pizzerii Dukat </h3>
-                <p class="about-us_paragraph">Od kilku lat tworzymy z pasją i zaangażowaniem smak idealnej pizzy –
-                    przygotowywanej ze świeżych oraz wysokiej jakości składników i pieczonej na wyśmienitym cieście
-                    tworzonym w oparciu o specjalną recepturę. </p>
-                <p class="about-us_paragraph">W bogatej ofercie naszej Pizzerii, klienci znajdą nie tylko pizzę o
-                    różnych smakach, ale także szeroką ofertę posiłków typu fast food, takich jak kebaby, hamburgery czy
-                    food boxy, a także zestawy w wersji obiadowej oraz dwa rodzaje sałatek. Zapraszamy również na pyszną
-                    kawę z ekspresu! </p>
-                <p class="about-us_paragraph">Chcemy serdecznie podziękować naszym wieloletnim jak i nowym klientom, za
-                    Wasze zaufanie i wybór naszej Pizzerii oraz wyrażamy nadzieję, że Pizzeria Dukat w Bogorii zawsze
-                    będzie dla Państwa miejscem gdzie można smacznie zjeść.</p>
-
-            </div>
-
-            <img class="about-us_image" src="/images/about-us.jpg" alt="">
-
-
+        </nav>
+        <script src="/js/main-navigation.js"></script>
+        <section class="main-banner">
+            <a href="#about-us" class="main-banner_button">
+                Poznaj nas lepiej
+            </a>
         </section>
-
+        <div class="container" id="about-us">
+            <section class="about-us">
+                <div class="about-us_text">
+                    <h3 class="about-us_header"> Najwyższej jakości jedzenie w Pizzerii Dukat w Bogorii</h3>
+                    <p class="about-us_paragraph">
+                        Od kilku lat tworzymy z pasją i zaangażowaniem smak idealnej pizzy –
+                    przygotowywanej ze świeżych oraz wysokiej jakości składników i pieczonej na wyśmienitym cieście
+                    tworzonym w oparciu o specjalną recepturę.
+                    </p>
+                    <p class="about-us_paragraph">
+                        W naszej bogatej ofercie, klienci znajdą nie tylko pizzę o
+                    różnych smakach, ale także szeroką ofertę posiłków typu fast food, takich jak kebab, hamburgery czy
+                    food boxy, a także zestawy w wersji obiadowej oraz dwa rodzaje sałatek.
+                    </p>
+                    <p class="about-us_paragraph">
+                        Bardzo dziękujemy naszym wieloletnim jak i nowym klientom za
+                    zaufanie oraz serdecznie zapraszamy do naszej pizzerii!
+                    </p>
+                </div>
+                <img class="about-us_image" src="/images/about-us.jpg" alt="">
+            </section>
+        </div>
+        <section class="bookmark bookmark--menu" id="menu">
+            <h2 class="bookmark_header">Menu</h2>
+            <p class="bookmark_description">Spójrz, co dla Ciebie przygotowaliśmy</p>
+        </section>
+        <div class="container" id="menu">
+            <section class="menu">
+                <div class="menu_column">
+                    <h3 class="menu_header">Pizza</h3>
+                    <ul class="menu_list">
+                        <li class="menu_list-item">
+                            <div class="menu_position">
+                                <div class="menu_position-name">Margarita</div>
+                                <div class="menu_position-price">15zł/33cm || 23zł/45cm</div>
+                            </div>
+                            <div class="menu_description">
+                                sos, ser, oregano, bazylia
+                            </div>
+                        </li>
+                        <li class="menu_list-item">
+                            <div class="menu_position">
+                                <div class="menu_position-name">Capriciossa</div>
+                                <div class="menu_position-price">21zł/33cm || 30zł/45cm</div>
+                            </div>
+                            <div class="menu_description">
+                                sos, ser, pieczarki, szynka, oregano
+                            </div>
+                        </li>
+                        <li class="menu_list-item">
+                            <div class="menu_position">
+                                <div class="menu_position-name">Napoli</div>
+                                <div class="menu_position-price">21zł/33cm || 30zł/45cm</div>
+                            </div>
+                            <div class="menu_description">
+                                sos, ser, salami, oliwki czarne, oregano
+                            </div>
+                        </li>
+                        <li class="menu_list-item">
+                            <div class="menu_position">
+                                <div class="menu_position-name">Becon</div>
+                                <div class="menu_position-price">21zł/33cm || 30zł/45cm</div>
+                            </div>
+                            <div class="menu_description">
+                                sos, ser, boczek, oregano
+                            </div>
+                        </li>
+                        <li class="menu_list-item">
+                            <div class="menu_position">
+                                <div class="menu_position-name">Funghi</div>
+                                <div class="menu_position-price">19zł/33cm || 29zł/45cm</div>
+                            </div>
+                            <div class="menu_description">
+                                sos, ser, pieczarki, oregano
+                            </div>
+                        </li>
+                        <li class="menu_list-item">
+                            <div class="menu_position">
+                                <div class="menu_position-name">Prostitutto</div>
+                                <div class="menu_position-price">20zł/33cm || 30zł/45cm</div>
+                            </div>
+                            <div class="menu_description">
+                                sos, ser, szynka, oregano
+                            </div>
+                        </li>
+                    </li>
+                    <li class="menu_list-item">
+                        <div class="menu_position">
+                            <div class="menu_position-name">Pepperoni</div>
+                            <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                        </div>
+                        <div class="menu_description">
+                            sos, ser, szynka, papryka pepperoni, cebula, oregano
+                        </div>
+                    </li>
+                </li>
+                <li class="menu_list-item">
+                    <div class="menu_position">
+                        <div class="menu_position-name">Wegetarian</div>
+                        <div class="menu_position-price">20zł/33cm || 30zł/45cm</div>
+                    </div>
+                    <div class="menu_description">
+                        sos, ser, cebula, kukurydza, pieczarki, papryka, oregano
+                    </div>
+                </li>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Mięsne Trio</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser, kurczak, wołowina, salami, oregano
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Hawajska</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser, szynka, ananas, kukurydza, oregano
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Kebab Pizza</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser, mięso kebab, ogórek kiszony, pomidor świeży, oregano
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Amore</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos czosnkowy, ser, bekon, kurczak, cebula, pieczarki, oregano
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Grecka</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser, oliwki zielone, oliwki czarne, pomidor świeży, kurczak, kukurydza
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Diabolo</div>
+                    <div class="menu_position-price">25 zł/33cm || 35 zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser, salami, bekon, chilli, cebula, oregano
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Na Bogato</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser, pieczarki, boczek, salami, szynka, papryka, oregano
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Wiejska</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser, kiełbasa wiejska, boczek, pieczarki, ogórek kiszony, cebula, czosnek, oregano
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Dukat</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser + sześć dowolnych składników, oregano
+                </div>
+            </li>
+            <li class="menu_list-item">
+                <div class="menu_position">
+                    <div class="menu_position-name">Roma</div>
+                    <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+                </div>
+                <div class="menu_description">
+                    sos, ser, kurczak, szynka, pieczarki, cebula, groszek, oregano
+                </div>
+            </li>
+        </ul>
     </div>
-</body>
+    <div class="menu_column">
+        <ul class="menu_list">
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Pół na Pół</div>
+                <div class="menu_position-price">26zł/33cm || 36zł/45cm</div>
+            </div>
+            <div class="menu_description">
+                dwie dowolne pizze na pół
+            </div>
+        </li>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Barbecue</div>
+            <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+        </div>
+        <div class="menu_description">
+            sos barbecue, kurczak, boczek, kukurydza, oregano
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Sorentino</div>
+            <div class="menu_position-price">26zł/33cm || 36zł/45cm</div>
+        </div>
+        <div class="menu_description">
+            sos mexicana, ser, kabanos, wołowina, bekon opiekany, mini korniszonek, cebula, oregano
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Tuna</div>
+            <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+        </div>
+        <div class="menu_description">
+            sos mexicana, ser, tuńczyk, oliwki czarne, kukurydza, cebula, mini korniszonek
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Rukolla</div>
+            <div class="menu_position-price">25zł/33cm || 35zł/45cm</div>
+        </div>
+        <div class="menu_description">
+            sos salsa mexicana, ser, szynka, rukola, kukurydza, papryka, cebula
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <h3 class="menu_header">Dania barowe</h3>
+        <div class="menu_position">
+            <div class="menu_position-name">Food box</div>
+            <div class="menu_position-price">12.50zł</div>
+        </div>
+        <div class="menu_description">
+            z warzywami
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Food box</div>
+            <div class="menu_position-price">11zł</div>
+        </div>
+        <div class="menu_description">
+            bez warzyw
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Kebab</div>
+            <div class="menu_position-price">10zł</div>
+        </div>
+        <div class="menu_description">
+            mały w bułce
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Kebab</div>
+            <div class="menu_position-price">14zł</div>
+        </div>
+        <div class="menu_description">
+            duży w bułce
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Kebab z frytkami i surówką</div>
+            <div class="menu_position-price">10zł</div>
+        </div>
+        <div class="menu_description">
+            mały
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Kebab z frytkami i surówką</div>
+            <div class="menu_position-price">17zł</div>
+        </div>
+        <div class="menu_description">
+            duży
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Filet z frytkami i surówką</div>
+            <div class="menu_position-price">17zł</div>
+        </div>
+        <div class="menu_description">
+            zestaw obiadowy
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Filet, ziemniaki opiekane, surówka</div>
+            <div class="menu_position-price">18zł</div>
+        </div>
+        <div class="menu_description">
+            zestaw obiadowy
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Tortilla</div>
+            <div class="menu_position-price">14zł</div>
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Chickenburger</div>
+            <div class="menu_position-price">10zł</div>
+        </div>
+    </li>
+    <li class="menu_list-item">
+        <div class="menu_position">
+            <div class="menu_position-name">Kebabburger</div>
+            <div class="menu_position-price">8zł</div>
+        </div>
+    </li>
+</li>
+<li class="menu_list-item">
+    <div class="menu_position">
+        <div class="menu_position-name">Frytki</div>
+        <div class="menu_position-price">4.50zł</div>
+    </div>
+    <div class="menu_description">
+        małe, 100 g
+    </div>
+</li>
+</li>
+<li class="menu_list-item">
+    <div class="menu_position">
+        <div class="menu_position-name">Frytki</div>
+        <div class="menu_position-price">5.50zł</div>
+    </div>
+    <div class="menu_description">
+        średnie, 150 g
+    </div>
+</li>
+<li class="menu_list-item">
+    <div class="menu_position">
+        <div class="menu_position-name">Frytki</div>
+        <div class="menu_position-price">6.50zł</div>
+    </div>
+    <div class="menu_description">
+        duże, 200 g
+    </div>
+</li>
+<li class="menu_list-item">
+    <div class="menu_position">
+        <div class="menu_position-name">Hot Dog</div>
+        <div class="menu_position-price">7zł</div>
+    </div>
+</li>
+</ul>
+</div>
+<div class="menu_column">
+    <ul class="menu_list">
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Hot Dog Francuski</div>
+                <div class="menu_position-price">6zł</div>
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Hamburger</div>
+                <div class="menu_position-price">8zł</div>
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Cheesburger</div>
+                <div class="menu_position-price">8.50zł</div>
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Zapiekanka</div>
+                <div class="menu_position-price">6zł</div>
+            </div>
+        </li>
+        <h3 class="menu_header">Sałatki</h3>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Sałatka z kurczakiem</div>
+                <div class="menu_position-price">11zł</div>
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Sałatka grecka</div>
+                <div class="menu_position-price">11zł</div>
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <h3 class="menu_header">Kawy i herbaty</h3>
+            <div class="menu_position">
+                <div class="menu_position-name">Kawa parzona</div>
+                <div class="menu_position-price">5zł</div>
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Kawa rozpuszczalna</div>
+                <div class="menu_position-price">5zł</div>
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Kawa z ekspresu</div>
+                <div class="menu_position-price">6zł</div>
+            </div>
+            <div class="menu_description">
+                różne smaki
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Herbata</div>
+                <div class="menu_position-price">5zł</div>
+            </div>
+            <div class="menu_description">
+                klasyczna
+            </div>
+        </li>
+        <h3 class="menu_header">Dodatki</h3>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Ser do pizzy</div>
+                <div class="menu_position-price">5zł/33cm || 6zł/45cm</div>
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Składniki do pizzy</div>
+                <div class="menu_position-price">5zł/33cm || 6zł/45cm</div>
+            </div>
+            <div class="menu_description">
+                kurczak, wołowina, mięso kebab, kiełbasa wiejska, salami, boczek, szynka, kabanos, tuńczyk
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Składniki do pizzy</div>
+                <div class="menu_position-price">5zł/33cm || 6zł/45cm</div>
+            </div>
+            <div class="menu_description">
+                pieczarki, kukurydza, zielony ogórek, oliwki zielone, oliwki czarne, cebula, papryka,
+                            pomidor, ogórek kiszony, czosnek, ananas, oregano, bazylia, chilli, papryka pepperoni,
+                            rukola
+            </div>
+        </li>
+        <li class="menu_list-item">
+            <div class="menu_position">
+                <div class="menu_position-name">Sosy</div>
+                <div class="menu_position-price">2zł</div>
+            </div>
+        </li>
+    </ul>
+</div>
+</section>
+</div>
+<section class="bookmark bookmark--news" id="news">
+    <h2 class="bookmark_header">Aktualności</h2>
+    <p class="bookmark_description">Sprawdź, co nowego u nas!</p>
+</section>
+<div class="container" id="news">
+    <section class="news">
+        <div class="news_text">
+            <h3 class="news_header"> Drodzy Klienci</h3>
+            <p class="news_paragraph">
+                W związku z wprowadzeniem obostrzeń przez rząd, inforumjemy że od soboty (24.10) zamówienia będą realizowane wyłącznie na wynos.
+            </p>
+   
+             <p class="new_paragraph_1">
+                *Przypominamy, że od niedawna można płacić w naszym lokalu również kartą (bezgotówkowo).
 
+            </p>
+
+
+                <h2 class="news_header_3">Serdecznie zapraszamy!</h2>
+            </div>
+        </section>
+    </div>
+    <section class="bookmark bookmark--gallery" id="gallery">
+        <h2 class="bookmark_header">Galeria</h2>
+        <p class="bookmark_description">Tak wyglądają nasze posiłki</p>
+    </section>
+    <div class="container">
+        <ul class="gallery">
+            <li class="gallery_list-item">
+                <div class="gallery_aspect-ratio">
+                    <img class="gallery_image" src="/images/gallery.jpg" name="Jedzenie">
+                </div>
+            </li>
+            <li class="gallery_list-item">
+                <div class="gallery_aspect-ratio">
+                    <img class="gallery_image" src="/images/gallery-2.jpg" name="Jedzenie">
+                </div>
+            </li>
+            <li class="gallery_list-item">
+                <div class="gallery_aspect-ratio">
+                    <img class="gallery_image" src="/images/gallery-3.jpg" name="Jedzenie">
+                </div>
+            </li>
+            <li class="gallery_list-item">
+                <div class="gallery_aspect-ratio">
+                    <img class="gallery_image" src="/images/gallery-4.jpg" name="Jedzenie">
+                </div>
+            </li>
+            <li class="gallery_list-item">
+                <div class="gallery_aspect-ratio">
+                    <img class="gallery_image" src="/images/gallery-5.jpg" name="Jedzenie">
+                </div>
+            </li>
+            <li class="gallery_list-item">
+                <div class="gallery_aspect-ratio">
+                    <img class="gallery_image" src="/images/gallery-6.jpg" name="Jedzenie">
+                </div>
+            </li>
+        </li>
+        <li class="gallery_list-item">
+            <div class="gallery_aspect-ratio">
+                <img class="gallery_image" src="/images/gallery-9.jpg" name="Jedzenie">
+            </div>
+        </li>
+    </li>
+    <li class="gallery_list-item">
+        <div class="gallery_aspect-ratio">
+            <img class="gallery_image" src="/images/gallery-10.jpg" name="Jedzenie">
+        </div>
+    </li>
+</li>
+<li class="gallery_list-item">
+    <div class="gallery_aspect-ratio">
+        <img class="gallery_image" src="/images/gallery-11.jpg" name="Jedzenie">
+    </div>
+</li>
+</ul>
+</div>
+<section class="bookmark bookmark--contact" id="contact">
+    <h2 class="bookmark_header">Kontakt</h2>
+    <p class="bookmark_description">Zadzwoń do nas!</p>
+</section>
+<div class="container" id="contact">
+    <section class="contact">
+        <div class="contact_text">
+            <img src="/images/phone.svg" alt="Telefon" class="contact_text_phone-icon">
+            <a href="tel:530744584" class="contact_text_phone-link">530 744 584</a>
+            <h3 class="contact_text-header">Godziny otwarcia</h3>
+            <ul class="contact_text-hours">
+                <li class="contact_text-hours_item">
+                    <div class="contact_text-hours_schedule">
+                        <div class="contact_schedule-day"> Poniedziałek - Czwartek</div>
+                        <div class="contact_schedule-time">10:00-21:00</div>
+                    </div>
+                </li>
+                <li class="contact_text-hours_item">
+                    <div class="contact_text-hours_schedule">
+                        <div class="contact_schedule-day"> Piątek</div>
+                        <div class="contact_schedule-time">10:00-22:00</div>
+                    </div>
+                </li>
+                <li class="contact_text-hours_item">
+                    <div class="contact_text-hours_schedule">
+                        <div class="contact_schedule-day"> Sobota</div>
+                        <div class="contact_schedule-time">12:00-22:00</div>
+                    </div>
+                </li>
+                <li class="contact_text-hours_item">
+                    <div class="contact_text-hours_schedule">
+                        <div class="contact_schedule-day"> Niedziela</div>
+                        <div class="contact_schedule-time">16:00-22:00</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+<section class="bookmark bookmark--route" id="route">
+    <h2 class="bookmark_header">Jak dojechać</h2>
+    <p class="bookmark_description">Łatwo nas znajdziesz</p>
+</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.635127419393!2d21.257166215258245!3d50.6524671795037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d560a82c390ef%3A0x1cd7426e097f7223!2sPizzeria%20%22Dukat%22!5e0!3m2!1spl!2spl!4v1588970397873!5m2!1spl!2spl" class="route"></iframe>
+<footer class="footer">
+    <p class="footer_paragraph">Pizzeria Dukat ul. Rynek 19, 28-210 Bogoria</p>
+</footer>
+</body>
 </html>
