@@ -1,0 +1,10 @@
+.footer_paragraph {
+    background: #333;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
